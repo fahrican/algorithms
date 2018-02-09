@@ -8,7 +8,7 @@ public class EqualizeTheArray {
      * and count how many elements are different
      * @return number of elements to delete
      * */
-    static int equalizeArray(int[] arr) {
+    private static int equalizeArray(int[] arr) {
         // Complete this function
         int mostPopularElement = getMostPopularElement(arr);
         int countElementsToDelete = 0;
@@ -27,7 +27,7 @@ public class EqualizeTheArray {
      * the aim is to find most frequent int in the array
      * @return most frequent int
      * */
-    public static int getMostPopularElement(int[] arr) {
+    private static int getMostPopularElement(int[] arr) {
 
         int count = 0;
         int mostPopularElement = -1;
@@ -42,7 +42,6 @@ public class EqualizeTheArray {
                     tempCount++;
                 }
             }
-
             if (tempCount > count) {
 
                 count = tempCount;
